@@ -1,0 +1,10 @@
+postgresdb:
+  image: postgres:9.4
+  restart: always
+  ports:
+    - "5432:5432"
+  environment:
+    - POSTGRES_USER=postgres
+    - POSTGRES_PASSWORD=postgres123
+  volumes:
+    - ${HOME}/tmp/data:/tmp/data 
