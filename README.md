@@ -1,12 +1,12 @@
 # User retention analysis
 * [Setup](#setup)
-* [Daily Active Users](#daily-active-users)
+* [Daily Active Users](#daily-active-users-dau)
 * [Engagement](#engagement)
 * [Retention](#retention)
 * [Retention Cohorts](#retention-cohorts)
-* [Monthly Seasonality](#monthly-seasonality)
+* [Monthly Seasonality](#monthly-seasonality-users)
 * [Monthly Seasonality Steps](#monthly-seasonality-steps)
-* [Weekly Seasonality](#seekly-seasonality)
+* [Weekly Seasonality](#weekly-seasonality)
 * [User Segmentation](#user-segmentation)
 
 
@@ -45,7 +45,7 @@ select * from activity limit 10;
 ## Monthly Seasonality (Steps)
 ![Monthly Seasonality Steps](charts/monthly_seasonality_steps.png)
 
-## Weekly Seasonality (Users)
+## Weekly Seasonality
 ![Weekly Seasonality](charts/weekly_seasonlity.png)
 
 ## User Segmentation

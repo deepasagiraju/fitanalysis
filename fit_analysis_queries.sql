@@ -126,18 +126,17 @@ SELECT month, count FROM a;
 
 -- Monthly Seasonality Steps
 with a AS ( 
-	SELECT 
-		to_char(activity_date, 'MON') AS month,
-		to_char(activity_date, 'MM') AS month_num, 
-		count(distinct user_id) 
-	FROM 
-		activity 
-	GROUP BY
-		 1, 2 
-	ORDER BY 
-		2 
-	) 
-	SELECT month, count FROM a ;
+SELECT 
+	to_char(activity_date, 'MON') AS month,
+	to_char(activity_date, 'MM') AS month_num, 
+	sum(steps) 
+FROM 
+	activity 
+GROUP BY
+	1, 2 
+ORDER BY 2 
+) 
+SELECT month, sum FROM a ;
 
 
 
